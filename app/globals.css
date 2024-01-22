@@ -149,7 +149,7 @@
 /*Main*/
 
 .home-container{
-    @apply bg-cover bg-no-repeat bg-center min-h-[600px] flex border-red-600 border-2
+    @apply bg-cover bg-no-repeat bg-center min-h-[600px] flex border-red-600 border-2 flex-1
 
 
 }

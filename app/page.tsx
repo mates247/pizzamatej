@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div>
       <div className="home-container bg-[url('/pizza.jpeg')]">
         <div className="bg">
           <div className="small-div">
@@ -15,7 +14,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
