@@ -5,6 +5,7 @@ import { IoReorderThreeSharp } from "react-icons/io5";
 import Link from "next/link";
 
 const Navigation = () => {
+  /*navigace zobrazení responsivní*/
   const [openLinks, setOpenLinks] = useState(false);
 
   const toogle = () => {
@@ -22,6 +23,7 @@ const Navigation = () => {
       window.removeEventListener("resize", resize);
     };
   }, []);
+  /*navigace zobrazení responsivní*/
 
   return (
     <div className="navbar">
@@ -35,26 +37,15 @@ const Navigation = () => {
           className="sm:hidden whitespace-nowrap"
           id={openLinks ? "open" : "close"}
         >
-          {/*<Link to="/">Domů</Link>*/}
-          {/*<Link to="/Menu">Menu</Link>*/}
-          {/*<Link to="/About">O Nás</Link>*/}
-          {/*<Link to="/Contact">Kontakt</Link>*/}
-
-          {/*<a href="https://www.w3.org/">Domů</a>*/}
-          {/*<a href="/Menu">Menu</a>*/}
-          {/*<a href="/About">O Nás</a>*/}
-          {/*<a href="/Contact">Kontakt</a>*/}
+          <Link href="/">Domů</Link>
+          <Link href="/menu">Menu</Link>
+          <Link href="/contact">Kontakt</Link>
         </div>
       </div>
       <div className="navbar-right">
         <Link href="/">Domů</Link>
         <Link href="/menu">Menu</Link>
-        <Link href="/about">O Nás</Link>
         <Link href="/contact">Kontakt</Link>
-        {/*<Link to="/">Domů</Link>*/}
-        {/*<Link to="/Menu">Menu</Link>*/}
-        {/*<Link to="/About">O Nás</Link>*/}
-        {/*<Link to="/Contact">Kontakt</Link>*/}
       </div>
       <div className="navbar-reorder">
         <button onClick={toogle}>
